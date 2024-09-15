@@ -68,7 +68,7 @@ const drawCanvas = (event) => {
 
     ctx.fillStyle = "green";
     ctx.fillRect(450, bridgeheightPx, lineHeightPx, kpHeightPx - bridgeheightPx);
-    ctx.fillText("brughoofte: " + brughoogte, 450, bridgeheightPx + ((kpHeightPx - bridgeheightPx) / 2));
+    ctx.fillText("brughoogte: " + brughoogte, 450, bridgeheightPx + ((kpHeightPx - bridgeheightPx) / 2));
 
     ctx.fillRect(400, depthPx, lineHeightPx, kpHeightPx - depthPx);
     ctx.fillText("diepte: " + diepte, 400, depthPx + ((kpHeightPx - depthPx) / 2));
