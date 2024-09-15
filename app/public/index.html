@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Brughoogte calculator</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="container">
+            <h1>Kanaalgegevens Formulier</h1>
+            <form id="inputData"></form>
+                <label for="waterstand">waterstand t.o.v. NAP (in dm):</label>
+                <input type="number" id="waterstand" name="waterstand" value="-2" required>
+
+                <label for="kanaalpeil">Kanaalpeil t.o.v. NAP (in dm):</label>
+                <input type="number" id="kanaalpeil" name="kanaalpeil" value="2" required>
+
+                <label for="diepte">Diepte bij kanaalpeil (in dm):</label>
+                <input type="number" id="diepte" name="diepte" value="30" required>
+
+                <label for="brughoogte">Brughoogte bij kanaalpeil (in dm):</label>
+                <input type="number" id="brughoogte" name="brughoogte" value="60" required>
+
+                <label for="kruiphoogte">Kruiphoogte (in dm) "hoogte boven water":</label>
+                <input type="number" id="kruiphoogte" name="kruiphoogte" value="58" required>
+
+                <label for="kielhoogte">kielhoogte (in dm) "diepte onder water":</label>
+                <input type="number" id="kielhoogte" name="kielhoogte" value="10" required>
+
+                <label for="speling">speling (in dm):</label>
+                <input type="number" id="speling" name="speling" value="2" required>
+
+                <input id="submitBtn" type="submit" value="Verstuur">
+            </form>
+        </div>
+        <div class="canvasCalcDiv">
+            <canvas id="canvasCalc" width="800" height="600" style="border:1px solid black;">
+                Sorry, your browser does not support canvas.
+            </canvas>
+        </div>
+    <script src="calc.js"></script>
+</body>
+</html>
